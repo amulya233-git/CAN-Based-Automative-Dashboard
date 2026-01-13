@@ -1,0 +1,276 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4580 ]
+[d frameptr 4065 ]
+"30 C:\Users\2003a\MPLABXProjects\ECU3.X\can_ecu3.c
+[e E10499 _CanOpMode `uc
+e_can_op_mode_normal 0
+e_can_op_mode_loop 64
+e_can_op_mode_config 128
+]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"23 C:\Users\2003a\MPLABXProjects\ECU3.X\can_ecu3.c
+[v _init_can init_can `(v  1 e 1 0 ]
+"55
+[v _get_msg_id_std get_msg_id_std `(us  1 s 2 get_msg_id_std ]
+"62
+[v _set_msg_id_std set_msg_id_std `(v  1 s 1 set_msg_id_std ]
+"94
+[v _can_receive can_receive `(v  1 e 1 0 ]
+"13 C:\Users\2003a\MPLABXProjects\ECU3.X\clcd_ecu3.c
+[v _clcd_write clcd_write `(v  1 e 1 0 ]
+"36
+[v _init_clcd init_clcd `(v  1 e 1 0 ]
+"51
+[v _clcd_print clcd_print `(v  1 e 1 0 ]
+"15 C:\Users\2003a\MPLABXProjects\ECU3.X\isr_ecu3.c
+[v _isr isr `IIH(v  1 e 1 0 ]
+"17 C:\Users\2003a\MPLABXProjects\ECU3.X\main_ecu3.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"36
+[v _main main `(v  1 e 1 0 ]
+"12 C:\Users\2003a\MPLABXProjects\ECU3.X\timer0_ecu3.c
+[v _init_timer0 init_timer0 `(v  1 e 1 0 ]
+"12 C:\Users\2003a\MPLABXProjects\ECU3.X\uart_ecu3.c
+[v _init_uart init_uart `(v  1 e 1 0 ]
+"58
+[v _putch putch `(v  1 e 1 0 ]
+"79
+[v _getch getch `(uc  1 e 1 0 ]
+"4422 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc/pic18f4580.h
+[v _RXFCON0 RXFCON0 `VEuc  1 e 1 @3540 ]
+"20963
+[v _TXB0SIDH TXB0SIDH `VEuc  1 e 1 @3905 ]
+"21075
+[v _TXB0SIDL TXB0SIDL `VEuc  1 e 1 @3906 ]
+"21167
+[v _TXB0EIDH TXB0EIDH `VEuc  1 e 1 @3907 ]
+"21279
+[v _TXB0EIDL TXB0EIDL `VEuc  1 e 1 @3908 ]
+"21391
+[v _TXB0DLC TXB0DLC `VEuc  1 e 1 @3909 ]
+"21469
+[v _TXB0D0 TXB0D0 `VEuc  1 e 1 @3910 ]
+"23528
+[v _RXB0CON RXB0CON `VEuc  1 e 1 @3936 ]
+"23721
+[v _RXB0SIDH RXB0SIDH `VEuc  1 e 1 @3937 ]
+"23833
+[v _RXB0SIDL RXB0SIDL `VEuc  1 e 1 @3938 ]
+"24159
+[v _RXB0DLC RXB0DLC `VEuc  1 e 1 @3941 ]
+"24274
+[v _RXB0D0 RXB0D0 `VEuc  1 e 1 @3942 ]
+"24770
+[v _CANSTAT CANSTAT `VEuc  1 e 1 @3950 ]
+"24879
+[v _CANCON CANCON `VEuc  1 e 1 @3951 ]
+"24983
+[v _BRGCON1 BRGCON1 `VEuc  1 e 1 @3952 ]
+"25045
+[v _BRGCON2 BRGCON2 `VEuc  1 e 1 @3953 ]
+"25116
+[v _BRGCON3 BRGCON3 `VEuc  1 e 1 @3954 ]
+"25434
+[v _ECANCON ECANCON `VEuc  1 e 1 @3959 ]
+"25714
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"26058
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"27059
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"27281
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"27503
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"29245
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"29257
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"29269
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"31712
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"34752
+[v _BRG16 BRG16 `VEb  1 e 0 @32195 ]
+"34755
+[v _BRGH BRGH `VEb  1 e 0 @32098 ]
+"34914
+[v _CREN CREN `VEb  1 e 0 @32092 ]
+"35487
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"36081
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"36117
+[v _PSA PSA `VEb  1 e 0 @32427 ]
+"36192
+[v _RB0 RB0 `VEb  1 e 0 @31752 ]
+"36195
+[v _RB1 RB1 `VEb  1 e 0 @31753 ]
+"36210
+[v _RB6 RB6 `VEb  1 e 0 @31758 ]
+"36213
+[v _RB7 RB7 `VEb  1 e 0 @31759 ]
+"36228
+[v _RC0 RC0 `VEb  1 e 0 @31760 ]
+"36231
+[v _RC1 RC1 `VEb  1 e 0 @31761 ]
+"36243
+[v _RC2 RC2 `VEb  1 e 0 @31762 ]
+"36279
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"36312
+[v _RD7 RD7 `VEb  1 e 0 @31775 ]
+"36372
+[v _RX9 RX9 `VEb  1 e 0 @32094 ]
+"36660
+[v _RXB0FUL RXB0FUL `VEb  1 e 0 @31495 ]
+"36666
+[v _RXB0IF RXB0IF `VEb  1 e 0 @32032 ]
+"38859
+[v _SENDB SENDB `VEb  1 e 0 @32099 ]
+"38880
+[v _SPEN SPEN `VEb  1 e 0 @32095 ]
+"38958
+[v _SYNC SYNC `VEb  1 e 0 @32100 ]
+"38964
+[v _T08BIT T08BIT `VEb  1 e 0 @32430 ]
+"38970
+[v _T0CS T0CS `VEb  1 e 0 @32429 ]
+"39093
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"39096
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"39102
+[v _TMR0ON TMR0ON `VEb  1 e 0 @32431 ]
+"39174
+[v _TRISB0 TRISB0 `VEb  1 e 0 @31896 ]
+"39177
+[v _TRISB1 TRISB1 `VEb  1 e 0 @31897 ]
+"39180
+[v _TRISB2 TRISB2 `VEb  1 e 0 @31898 ]
+"39183
+[v _TRISB3 TRISB3 `VEb  1 e 0 @31899 ]
+"39192
+[v _TRISB6 TRISB6 `VEb  1 e 0 @31902 ]
+"39195
+[v _TRISB7 TRISB7 `VEb  1 e 0 @31903 ]
+"39216
+[v _TRISC6 TRISC6 `VEb  1 e 0 @31910 ]
+"39219
+[v _TRISC7 TRISC7 `VEb  1 e 0 @31911 ]
+"39243
+[v _TRISD7 TRISD7 `VEb  1 e 0 @31919 ]
+"39303
+[v _TX9 TX9 `VEb  1 e 0 @32102 ]
+"39600
+[v _TXB0REQ TXB0REQ `VEb  1 e 0 @31235 ]
+"40326
+[v _TXEN TXEN `VEb  1 e 0 @32101 ]
+"40335
+[v _TXIF TXIF `VEb  1 e 0 @31988 ]
+"16 C:\Users\2003a\MPLABXProjects\ECU3.X\main_ecu3.c
+[v _flag flag `ui  1 e 2 0 ]
+"36
+[v _main main `(v  1 e 1 0 ]
+{
+"41
+[v main@recv_data recv_data `[5]uc  1 a 5 18 ]
+"40
+[v main@recv_msg_id recv_msg_id `ui  1 a 2 25 ]
+[v main@recv_length recv_length `ui  1 a 2 23 ]
+"96
+} 0
+"17
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"34
+} 0
+"12 C:\Users\2003a\MPLABXProjects\ECU3.X\uart_ecu3.c
+[v _init_uart init_uart `(v  1 e 1 0 ]
+{
+"56
+} 0
+"12 C:\Users\2003a\MPLABXProjects\ECU3.X\timer0_ecu3.c
+[v _init_timer0 init_timer0 `(v  1 e 1 0 ]
+{
+"38
+} 0
+"36 C:\Users\2003a\MPLABXProjects\ECU3.X\clcd_ecu3.c
+[v _init_clcd init_clcd `(v  1 e 1 0 ]
+{
+"49
+} 0
+"23 C:\Users\2003a\MPLABXProjects\ECU3.X\can_ecu3.c
+[v _init_can init_can `(v  1 e 1 0 ]
+{
+"53
+} 0
+"51 C:\Users\2003a\MPLABXProjects\ECU3.X\clcd_ecu3.c
+[v _clcd_print clcd_print `(v  1 e 1 0 ]
+{
+[v clcd_print@data data `*.35Cuc  1 p 2 2 ]
+[v clcd_print@addr addr `uc  1 p 1 4 ]
+"58
+} 0
+"13
+[v _clcd_write clcd_write `(v  1 e 1 0 ]
+{
+[v clcd_write@byte byte `uc  1 p 1 wreg ]
+[v clcd_write@byte byte `uc  1 p 1 wreg ]
+[v clcd_write@control_bit control_bit `uc  1 p 1 0 ]
+"15
+[v clcd_write@byte byte `uc  1 p 1 1 ]
+"34
+} 0
+"94 C:\Users\2003a\MPLABXProjects\ECU3.X\can_ecu3.c
+[v _can_receive can_receive `(v  1 e 1 0 ]
+{
+"105
+[v can_receive@i i `i  1 a 2 16 ]
+"95
+[v can_receive@ptr ptr `*.39uc  1 a 2 14 ]
+"94
+[v can_receive@msg_id msg_id `*.30us  1 p 1 8 ]
+[v can_receive@data data `*.30uc  1 p 1 9 ]
+[v can_receive@len len `*.30uc  1 p 1 10 ]
+"115
+} 0
+"55
+[v _get_msg_id_std get_msg_id_std `(us  1 s 2 get_msg_id_std ]
+{
+"56
+[v get_msg_id_std@id id `us  1 a 2 6 ]
+"59
+} 0
+"15 C:\Users\2003a\MPLABXProjects\ECU3.X\isr_ecu3.c
+[v _isr isr `IIH(v  1 e 1 0 ]
+{
+"17
+[v isr@count count `ui  1 s 2 count ]
+"76
+} 0
